@@ -18,7 +18,7 @@ class EventRunnerPropertiesHelper(Singleton):
 	"""
 	Event Runner Properties Helper
 	"""
-	def onInit(self, *args, **kwargs):
+	def __init__(self, *args, **kwargs):
 		self.properties = []
 		return
 
