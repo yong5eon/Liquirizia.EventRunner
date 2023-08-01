@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 
+from abc import ABC, abstractmethod
+
 __all__ = (
 	'EventRunnerError'
 )
 
 
 class EventRunnerError(object):
-	"""
-	Event Runner Error Interface
-	"""
+	"""Event Runner Error Interface"""
+
+	@abstractmethod
 	def __call__(
 		self,
 		event: str,
